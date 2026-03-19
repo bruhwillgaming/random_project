@@ -6,15 +6,13 @@
     <div class="marquee">   
     <span><h1>Random Project Guide & Tutorial</h1></span>
     </div>
-    <form>
-        <label for="name">text</label>
-          <input type="text" id="name" name="name">
-
-            <label for="email">text</label>
-              <input type="email" id="email" name="email">
-
-                <button type="submit">button</button>
-                </form>
+<div class="newsletter-embed">
+  <form action="https://bruhwillgame.substack.com/embed" method="POST" target="substack-frame">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <iframe name="substack-frame" style="width:100%; height:150px; border:none; overflow:hidden;"></iframe>
+</div>
           <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#section1">Introduction</a></li>
@@ -49,21 +47,47 @@
             <ul>
            <li>1st Enable the permissions in Settings, Apps, "Random Project", Permissions and enable them
           as in the screenshot. These do nothing and is just a permission test.
-          <img src="screenshot.png" alt="screenshot"></li>
+             <a href="https://bruhwillgaming.github.io/random_project/source.html">
+  <img src="screenshot.png" alt="screenshot" class="small-img">
+             </a>
+          </li>
           
           <li>2nd press the buttons and toggle the stuff and do random stuff.
-            <img src="screenshot2.png" alt="screenshot"></li>
+            <a href="https://bruhwillgaming.github.io/random_project/source2.html">
+  <img src="screenshot2.png" alt="screenshot" class="small-img">
+            </a></li>
             </ul>
           </p>
-      <a href="https://patreon.com/Bruhwillgaem?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink">
-          <img src="patreon.jpg" alt="Click me!">
+    <br>
+    <br>
+    <a name="section4">
+<footer class="footer">
+  <div class="footer-content">
+    
+    <p class="footer-text">Support me on these links</p>
+
+    <div class="footer-links">
+      <div class="footer-item">
+        <a href="https://patreon.com/Bruhwillgaem?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink">
+  <img src="patreon.jpg" alt="screenshot" class="small-img">
           </a>
-          <a href="https://x.com/Youtube697878">
-              <img src="twitter.jpg" alt="Click me">
-          </a>
-          <a href="https://bruhwillgame.neocities.org/">
-              <img src="neocities.jpg" alt="Click me!">
-              </a>
+      </div>
+
+      <div class="footer-item">
+        <a href="https://x.com/Youtube697878">
+         <img src="twitter.jpg" alt="screenshot" class="small-img">
+        </a>
+      </div>
+
+      <div class="footer-item">
+        <a href="https://bruhwillgame.neocities.org/">
+          <img src="neocities.jpg" alt="screenshot" class="small-img">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
   </body>
   <style>
     .marquee {
@@ -85,6 +109,66 @@
                           to {
                               transform: translateX(-100%);
                                 }
-                                }
+                                
+    .small-img {
+  width: 300px;
+  height: auto;
+                }
+    /* Make page take full height so footer sticks properly */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Your main content should grow */
+body > *:not(.footer) {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #111;
+  padding: 25px 10px;
+}
+
+/* Center everything */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.footer-text {
+  color: #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Links row */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* evenly spaced */
+  flex-wrap: wrap;
+}
+
+/* Each item */
+.footer-item img {
+  width: 55px;
+  height: auto;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Hover effect */
+.footer-item img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+    
     </style>
 </html>
